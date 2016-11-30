@@ -12,8 +12,13 @@ https://www.apachefriends.org/download.html
 http://howtodoinjava.com/spring/spring-orm/spring-3-and-hibernate-integration-tutorial-with-example/
 
 6) Database :
-    Login : (Table for all)
+    Login : (for all)
         1. user_role - id, role
         2. user_logins - id, username/ emailId, password, first_name, last_name 
-        3. user_registration - rest fields
+        3. user_registration - rest fields (image, address, personal info)
+        
+7) Versions :
+    MySQL - Latest Version 
+    Spring - 4.0.2
+    Hibernate - 4
         
