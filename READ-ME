@@ -8,16 +8,19 @@ https://spring.io/tools/sts/all
 4) Install XAMPP Package
 https://www.apachefriends.org/download.html
 
-5) Spring Hibernate Integration
+5) Spring Hibernate Integration ( using Spring Tags)
 http://howtodoinjava.com/spring/spring-orm/spring-3-and-hibernate-integration-tutorial-with-example/
 
-6) Database :
+6) Spring Bootstrap Integration 
+http://www.technicalkeeda.com/bootstrap/twitter-bootstrap-with-spring-mvc
+
+7) Database :
     Login : (for all)
         1. user_role - id, role
         2. user_logins - id, username/ emailId, password, first_name, last_name 
         3. user_registration - rest fields (image, address, personal info)
         
-7) Versions :
+8) Versions :
     MySQL - Latest Version 
     Spring - 4.0.2
     Hibernate - 4
