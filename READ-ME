@@ -1,13 +1,17 @@
-1) Downlaod STS Editor
+1) Donwload JDK 1.8 *
+
+2) Donwload Apache Tomcat 8
+
+3) Downlaod STS Editor
 https://spring.io/tools/sts/all
 
-2) Install XAMPP Package
+4) Install XAMPP Package
 https://www.apachefriends.org/download.html
 
-3) Spring Hibernate Integration
+5) Spring Hibernate Integration
 http://howtodoinjava.com/spring/spring-orm/spring-3-and-hibernate-integration-tutorial-with-example/
 
-4) Database :
+6) Database :
     Login : (Table for all)
         1. user_role - id, role
         2. user_logins - id, username/ emailId, password, first_name, last_name 
