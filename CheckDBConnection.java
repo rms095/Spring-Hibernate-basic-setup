@@ -1,4 +1,4 @@
-package com.howtodoinjava.jdbc.demo;
+package com.sunbeam.apps;
  
 import java.sql.Connection;
 import java.sql.DriverManager;
