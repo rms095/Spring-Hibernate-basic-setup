@@ -1,18 +1,40 @@
-Snapshot : 
-
-User user = userService.getUser(username, password)
-if(user !== null){  
-    if(user.getActStatus){
-        switch(user.getRole().getId()){
-            case 0 : return modelMap.add("result", user, "admin");
-            case 1 : return modelMap.add("result", user, "owner");
-            default : return modelMap.add("result", user, "student");
+package com.sunbeam.apps;
+ 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+ 
+public class CheckDBConnection {
+    public static void main(String[] argv) {
+ 
+        System.out.println("-------- MySQL JDBC Connection Demo ------------");
+        try
+        {
+            Class.forName("com.mysql.jdbc.Driver");
+        } 
+        catch (ClassNotFoundException e) {
+            System.out.println("MySQL JDBC Driver not found !!");
+            return;
         }
-    }else{
-        return modelMap.add("error", "Act not activated yet, Kindly contact to admin - admin@sunbeam.com");    
+        System.out.println("MySQL JDBC Driver Registered!");
+        Connection connection = null;
+        try {
+            connection = DriverManager
+                .getConnection("jdbc:mysql://localhost:3306/DBName", "root", "password");
+            System.out.println("SQL Connection to database established!");
+ 
+        } catch (SQLException e) {
+            System.out.println("Connection Failed! Check output console");
+            return;
+        } finally {
+            try
+            {
+                if(connection != null)
+                    connection.close();
+                System.out.println("Connection closed !!");
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
     }
-    }
-}
-else{
-    return modelMap.add("error", "Invalid Username or Password");
 }
